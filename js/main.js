@@ -63,26 +63,7 @@ $('.orichi-product-list')
   });
 
 $('.orichi-product-list').on('afterChange', function (event, slick, currentSlide) {
-  var slickFor1024 = 4;
-  var slickFor600 = 2;
-  var slickFor480 = 1;
-  var isNext = false;
-  if ($(window).width() >= 1024) {
-    if (currentSlide === slickFor1024) {
-      isNext = true;
-    }
-  }
-  else if ($(window).width() >= 600) {
-    if (currentSlide === slickFor600) {
-      isNext = true;
-    }
-  }
-  else if ($(window).width() >= 480) {
-    if (currentSlide === slickFor480) {
-      isNext = true;
-    }
-  }
-  if (isNext) {
+  if (slick.currentSlide >= slick.slideCount - slick.options.slidesToShow){
     $('.slick-next').addClass('hidden');
   }
   else {
