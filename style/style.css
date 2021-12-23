@@ -1,0 +1,177 @@
+ 
+  
+  body {
+   background: #eeee;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .orichi-wrapper{ 
+    background: white;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 15px;
+      padding: 15px;
+  }
+  .orichi-head{
+    display: flex;
+    background: white;
+  }
+  .orichi-countdown, .orichi-fs{
+    display: inline-block;
+  }
+  .orichi-countdown ul{
+    padding-left: 15px;
+    margin-top: 0;
+    padding-bottom:0px;
+    padding-top: 3px;
+    /* margin-block-start: 17px; */
+  }
+  .orichi-countdown ul li span{
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background: black;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+ 
+   
+  li {
+    display: inline-block; 
+    list-style-type: none; 
+    text-transform: uppercase;
+  }
+   .orichi-product-item{
+       position: relative;
+       overflow: hidden;
+       padding: 10px 6px;
+   }
+  .flash-sale-progress-bar__fire {
+    background: url('../img/f5233259f90b05efbf3867f564628853.png') 0 no-repeat;
+    width: 18px;
+    height: 21px;
+    background-size: contain;
+    position: absolute;
+    left: 3px;
+    top: -6px;
+}
+.flash-sale-progress-bar {
+    height: 16px;
+    background: url('../img/ac7f81d9ee062223753413ec98497a86.png') 0 100% no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+.flash-sale-progress-bar__text {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.flash-sale-progress-bar__complement-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffbda6;
+}
+.flash-sale-progress-bar__complement-sizer {
+    background: #fff;
+    float: right;
+    position: relative;
+    height: 18px;
+}
+.flash-sale-progress-bar__complement-wrapper {
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    height: 16px;
+    border-radius: 8px;
+}
+
+.orichi-price-wrapper{ display: flex;}
+.orichi-price-wrapper .orichi-price{font-size: 20px;font-weight: bold;color: #ee4d2d;line-height: 25px; }
+ .orichi-discount-price{position: absolute;z-index: 9999;background: #fedd1c;top: 0;right: 5px;font-size: 16px;color: #ee4d2d;opacity: 0.9;font-weight: bold;padding: 5px;}
+.orichi-price-wrapper .orichi-price:after {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 5px;
+  top: 28px;
+  position: absolute;
+  border-color: transparent #fedd1c;
+  border-style: solid;
+  border-width: 0 23.5px 4px;
+  opacity: 0.9;
+}
+.orichi-progress-bar{
+  margin-top: 10px;
+  display: block;
+}
+.orichi-price-old{
+  color: rgba(0,0,0,.13);
+  padding-top: 11x;
+  vertical-align: bottom;
+  display: table-column;
+  margin-top: 5px;
+  margin-right: 5px;
+  text-decoration: line-through;
+}
+.orichi-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+  margin-bottom: 15px;
+}
+.orichi-col-3{
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.orichi-col-4{
+  flex: 1 1;
+  width: 25%;
+}
+.orichi-hr{
+  display: block;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0,0,0,.05);
+}
+.orichi-product-item:hover{
+  box-shadow: 1px 1px 6px 3px #b3b3b321;
+}
+
+.orichi-product-list{
+  position: relative;
+}
+.orichi-product-list .slick-prev{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  background: #EE4D2D;
+  padding: 15px 3px;
+  color: #fff;
+  transform: translateY(-50%);
+}
+.orichi-product-list .slick-next{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  background: #EE4D2D;
+  padding: 15px 3px;
+  color: #fff;
+  transform: translateY(-50%);
+}
