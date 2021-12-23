@@ -4,18 +4,16 @@
     hour = minute * 60,
     day = hour * 24;
 
-  var endDate = "12/2/2021 00:00:00";
+  var endDate = "12/23/2021 15:00:00";
   const countDown = new Date(endDate).getTime(),
     x = setInterval(function () {
       const now = new Date().getTime();
       distance = countDown - now;
 
       // document.getElementById("days").innerText = Math.floor(distance / (day));
-
-      document.getElementById("hours").innerText = orichiFormatTime(Math.floor((distance % (day)) / (hour)));
-      document.getElementById("minutes").innerText = orichiFormatTime(Math.floor((distance % (hour)) / (minute)));
-      document.getElementById("seconds").innerText = orichiFormatTime(Math.floor((distance % (minute)) / second));
-
+      document.getElementById("hours").innerText = orichiFormatTime(Math.abs(Math.floor((distance % (day)) / (hour))));
+      document.getElementById("minutes").innerText = orichiFormatTime(Math.abs(Math.floor((distance % (hour)) / (minute))));
+      document.getElementById("seconds").innerText = orichiFormatTime(Math.abs(Math.floor((distance % (minute)) / second)));
       if (distance < 0) {
         document.getElementById("orichi-countdown").style.display = "none";
         clearInterval(x);
