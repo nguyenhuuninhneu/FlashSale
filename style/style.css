@@ -4,6 +4,9 @@
    background: #eeee;
    font-family: 'Roboto';
   }
+  .cb{
+    clear: both;
+  }
   .hidden{
     visibility: hidden;
   }
@@ -48,35 +51,33 @@
     text-transform: uppercase;
   }
    .orichi-product-item{
-       position: relative;
-       overflow: hidden;
-       padding: 10px 6px;
+     float: left;
+     width: calc((100% - (12px*4)) / 4);
+      padding: 10px 6px;
+      margin-bottom: 10px;
    }
   .flash-sale-progress-bar__fire {
-    background: url('../img/f5233259f90b05efbf3867f564628853.png') 0 no-repeat;
-    width: 18px;
-    height: 21px;
-    background-size: contain;
     position: absolute;
     left: 3px;
     top: -6px;
 }
+.flash-sale-progress-bar__fire img {
+  width: 18px;
+}
 .flash-sale-progress-bar {
     height: 16px;
-    background: url('../img/ac7f81d9ee062223753413ec98497a86.png') 0 100% no-repeat;
-    background-size: cover;
+    background: #ffbda6;
     position: relative;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .flash-sale-progress-bar__text {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #fff;
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  font-size: 10px;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  padding: 2px 0;
+  text-align: center;
 }
 .flash-sale-progress-bar__complement-color {
     position: absolute;
@@ -91,31 +92,31 @@
     height: 18px;
 }
 .flash-sale-progress-bar__complement-wrapper {
-    width: 100%;
-    background: transparent;
-    overflow: hidden;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
-    height: 16px;
-    border-radius: 8px;
+  width: 50%;
+  background: #EE4D2D;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 16px;
+  border-radius: 4px;
 }
 
 .orichi-price-wrapper{ display: flex;}
-.orichi-price-wrapper .orichi-price{font-size: 20px;font-weight: bold;color: #ee4d2d;line-height: 25px; }
- .orichi-discount-price{position: absolute;z-index: 9999;background: #fedd1c;top: 0;right: 5px;font-size: 16px;color: #ee4d2d;opacity: 0.9;font-weight: bold;padding: 5px;}
-.orichi-price-wrapper .orichi-price:after {
-  content: "";
-  width: 0;
-  height: 0;
-  right: 5px;
-  top: 28px;
+.orichi-price-wrapper .orichi-price{font-size: 16px;font-weight: bold;color: #ee4d2d;margin-top: 12px; }
+ .orichi-discount-price
+ {
   position: absolute;
-  border-color: transparent #fedd1c;
-  border-style: solid;
-  border-width: 0 23.5px 4px;
-  opacity: 0.9;
+  background: #F3E9E7;
+  top: -55%;
+  right: -35%;
+  font-size: 8px;
+  color: #ee4d2d;
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid #ee4d2d;
+  }
+.orichi-price-wrapper .orichi-price {
+ position: relative;
 }
 .orichi-progress-bar{
   margin-top: 10px;
@@ -129,20 +130,6 @@
   margin-top: 5px;
   margin-right: 5px;
   text-decoration: line-through;
-}
-.orichi-row{
-  display: flex;
-  flex-wrap: wrap;
-  margin: -5px;
-  margin-bottom: 15px;
-}
-.orichi-col-3{
-  flex: 0 0 auto;
-  width: 33.33333333%;
-}
-.orichi-col-4{
-  flex: 1 1;
-  width: 25%;
 }
 .orichi-hr{
   display: block;
@@ -176,3 +163,36 @@
   color: #fff;
   transform: translateY(-50%);
 }
+.orichi-product-list .slick-prev:hover,.orichi-product-list .slick-next:hover{
+  cursor: pointer;
+}
+
+.orichi-view-more{
+  text-align: center;
+}
+
+.btn-view-more{
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 10px;
+  color: #fff;
+  background: #EE4D2D;
+}
+
+#spin-loading{
+  visibility: hidden;
+}
+
+/* .orichi-product-list{
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
