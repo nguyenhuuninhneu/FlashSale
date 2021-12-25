@@ -4,7 +4,7 @@
     hour = minute * 60,
     day = hour * 24;
 
-  var endDate = "12/23/2021 15:00:00";
+  var endDate = "12/25/2021 23:00:00";
   const countDown = new Date(endDate).getTime(),
     x = setInterval(function () {
       const now = new Date().getTime();
