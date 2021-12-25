@@ -35,37 +35,18 @@ $('.btn-view-more').on('click', function () {
   $('.btn-view-more').css('visibility', 'hidden');
   $('#spin-loading').css('visibility', 'visible');
   var html = '<div class="orichi-row">'
-  html += '<div class="orichi-product-item">  <a href="javascript://">    <img src="img/product.png" alt="" sizes="" srcset="" width="100%">  </a>  <div class="orichi-price-wrapper">    <div class="orichi-price">$150.000      <div class="orichi-discount-price">-10%</div>    </div>  </div>  <div class="orichi-progress-bar">    <div class="flash-sale-progress-bar flash-sale-progress-bar--landing-page">      <div        class="flash-sale-progress-bar__complement-wrapper flash-sale-progress-bar__complement-wrapper--landing-page">      </div>      <div class="flash-sale-progress-bar__text">Sold 159</div>      <div class="flash-sale-progress-bar__fire">        <img src="../img/f5233259f90b05efbf3867f564628853.png" alt="">      </div>    </div>  </div></div>';
+  html += '<div class="orichi-product-item">  <a href="javascript://">    <img src="img/product.png" alt="" sizes="" srcset="" width="100%">  </a>  <div class="orichi-price-wrapper">    <div class="orichi-price">$150.000      <div class="orichi-discount-price">-10%</div>    </div>  </div>  <div class="orichi-progress-bar">    <div class="flash-sale-progress-bar flash-sale-progress-bar--landing-page">      <div        class="flash-sale-progress-bar__complement-wrapper flash-sale-progress-bar__complement-wrapper--landing-page">      </div>      <div class="flash-sale-progress-bar__text">Sold 159</div>      <div class="flash-sale-progress-bar__fire">        <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">      </div>    </div>  </div></div>';
   html += '</div>';
   setTimeout(
     function functionName() {
       $('.orichi-product-list').find('.cb').remove();
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
-      $('.orichi-product-list').append(html);
+      for (let index = 0; index < 5; index++) {
+        $('.orichi-product-list').append(html);
+      }
       $('.orichi-product-list').append('<div class="cb"></div>');
       $('.btn-view-more').css('visibility', 'visible');
       $('#spin-loading').css('visibility', 'hidden');
       $('.orichi-product-list').find('cb').remove();
-      $('.orichi-product-list .orichi-product-item').css('clear', 'none');
-      $('.orichi-product-list .orichi-product-item:nth-last-child ').css('clear', 'both');
-
     }, 3000)
 
 })
