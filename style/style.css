@@ -154,7 +154,7 @@
 .orichi-product-list{
   position: relative;
 }
-.orichi-product-list .slick-prev{
+/* .orichi-product-list .slick-prev{
   position: absolute;
   top: 50%;
   left: 0;
@@ -173,10 +173,35 @@
   padding: 15px 3px;
   color: #fff;
   transform: translateY(-50%);
-}
+} */
 .orichi-product-list .slick-prev:hover,.orichi-product-list .slick-next:hover{
   cursor: pointer;
 }
+
+#slider .slider-view .owl-controls .owl-prev { 
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  background: #EE4D2D;
+  padding: 15px 3px;
+  color: #fff;
+  transform: translateY(-50%);}
+  #slider .slider-view .owl-controls .owl-next { 
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    background: #EE4D2D;
+    padding: 15px 3px;
+    color: #fff;
+    transform: translateY(-50%);}
+#slider .slider-view .owl-controls .owl-next:hover,
+#slider .slider-view .owl-controls .owl-prev:hover { box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) }
+#slider .slider-view .owl-controls .owl-next:after,
+#slider .slider-view .owl-controls .owl-prev:after { content: "\f054"; font-family: 'Font Awesome'; font-weight: 900; }
 
 .orichi-view-more{
   text-align: center;

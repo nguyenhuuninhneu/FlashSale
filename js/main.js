@@ -32,7 +32,7 @@ $(document).ready(function () {
     effect: "fadeIn",
     effectTime: 1000
   });
-
+  $('#slider .slider-view').owlCarousel(owlslide($('#slider .slider-view .orichi-product-item-slider').size(), 30, false, true, true, 1, 2, 2, 4, 4, "fadeIn", "fadeOut"));
 })
 $('.btn-view-more').on('click', function () {
   $('.btn-view-more').css('visibility', 'hidden');
