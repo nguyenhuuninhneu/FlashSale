@@ -15,6 +15,13 @@
   .hidden{
     visibility: hidden;
   }
+  .wImage { overflow: hidden; position: relative; }
+  .wImage:before { content: ""; display: block; padding-bottom: 66.66% }
+  .wImage .image { height: 100%; left: 0; position: absolute; top: 0; width: 100% }
+  .wImage .image.cover img { height: 100%; object-fit: cover; width: 100%; }
+  .wImage .image img,
+  .wImage .image img.owl-lazy { -moz-transform: translateY(-50%) translateX(-50%); -moz-transition: 0.5s all ease-in-out; display: block; left: 50%; margin: auto; max-height: 100%; max-width: 100%; position: absolute; top: 50%; transform: translateY(-50%) translateX(-50%); transition: 0.5s all ease-in-out; vertical-align: middle; } 
+
   .orichi-wrapper{ 
     background: white;
       max-width: 800px;
@@ -63,6 +70,8 @@
     left: 3px;
     top: -6px;
 }
+.orichi-product-list .wImage { margin-bottom: 8px;}   
+.orichi-product-list .wImage:before {padding-bottom: 100%}    
 .flash-sale-progress-bar__fire img {
   width: 18px;
 }
