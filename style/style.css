@@ -316,5 +316,5 @@ ul {
 	background-repeat: no-repeat;
 }
 .orichi-product-list .orichi-slick-next:hover,.orichi-product-list .orichi-slick-prev{
-  cursor: pointer;
+  cursor: pointer; 
 }
