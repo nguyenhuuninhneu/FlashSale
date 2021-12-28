@@ -290,7 +290,7 @@ ul {
 	top: 50%;
 	left: -4px;
 	z-index: 1;
-	background: #EE4D2D url(/img/chevron-left-solid.svg);
+	background: #EE4D2D url(../img/chevron-left-solid.svg);
 	padding: 18px 4px;
 	border: 2px solid #EE4D2D;
 	box-sizing: border-box;
@@ -306,7 +306,7 @@ ul {
 	top: 50%;
 	right: -4px;
 	z-index: 1;
-	background: #EE4D2D url(/img/chevron-right-solid.svg) no-repeat 0;
+	background: #EE4D2D url(../img/chevron-right-solid.svg) no-repeat 0;
 	padding: 18px 4px;
 	border: 2px solid #EE4D2D;
 	box-sizing: border-box;
