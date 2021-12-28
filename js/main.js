@@ -15,8 +15,8 @@
       document.getElementById("minutes").innerText = orichiFormatTime(Math.abs(Math.floor((distance % (hour)) / (minute))));
       document.getElementById("seconds").innerText = orichiFormatTime(Math.abs(Math.floor((distance % (minute)) / second)));
       if (distance < 0) {
-        document.getElementById("orichi-countdown").style.display = "none";
-        clearInterval(x);
+document.getElementById("orichi-countdown").style.display = "none";
+clearInterval(x);
       }
     }, 0)
 
@@ -51,27 +51,27 @@ if ($('#orichi-layout').val() === 'slider') {
       prevArrow: '<div class="orichi-slick-prev"></div>',
       nextArrow: '<div class="orichi-slick-next"></div>',
       responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
+{
+breakpoint: 1024,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 3,
+}
+},
+{
+breakpoint: 600,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2
+}
+},
+{
+breakpoint: 480,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
       ]
     });
   $('.orichi-product-list').on('afterChange', function (event, slick, currentSlide) {
@@ -95,7 +95,7 @@ if ($('#orichi-layout').val() === 'slider') {
 $('.orichi-btn-view-more').on('click', function () {
   $('.orichi-btn-view-more').css('visibility', 'hidden');
   $('#orichi-spin-loading').css('visibility', 'visible');
-  var html = '<div class="orichi-product-item"><div class="wImage"><a href="#" title="" class="image cover">  <img data-src="img/1.png" /></a></div><div class="orichi-price-wrapper"><div class="orichi-price">$150.000  <div class="orichi-discount-price">-10%</div></div></div><div class="orichi-progress-bar"><div class="flash-sale-progress-bar flash-sale-progress-bar--landing-page">  <div    class="flash-sale-progress-bar__complement-wrapper flash-sale-progress-bar__complement-wrapper--landing-page">  </div>  <div class="flash-sale-progress-bar__text">Sold 159</div>  <div class="flash-sale-progress-bar__fire">    <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">  </div></div></div>        </div>        <div class="orichi-product-item"><div class="wImage"><a href="#" title="" class="image cover">  <img data-src="img/2.jpg" /></a></div><div class="orichi-price-wrapper"><div class="orichi-price">$150.000  <div class="orichi-discount-price">-10%</div></div></div><div class="orichi-progress-bar"><div class="flash-sale-progress-bar flash-sale-progress-bar--landing-page">  <div    class="flash-sale-progress-bar__complement-wrapper flash-sale-progress-bar__complement-wrapper--landing-page">  </div>  <div class="flash-sale-progress-bar__text">Sold 159</div>  <div class="flash-sale-progress-bar__fire">    <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">  </div></div></div>        </div>        <div class="orichi-product-item"><div class="wImage"><a href="#" title="" class="image cover">  <img data-src="" /></a></div><div class="orichi-price-wrapper"><div class="orichi-price">$150.000  <div class="orichi-discount-price">-10%</div></div></div><div class="orichi-progress-bar"><div class="flash-sale-progress-bar flash-sale-progress-bar--landing-page">  <div    class="flash-sale-progress-bar__complement-wrapper flash-sale-progress-bar__complement-wrapper--landing-page">  </div>  <div class="flash-sale-progress-bar__text">Sold 159</div>  <div class="flash-sale-progress-bar__fire">    <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">  </div></div></div>        </div>';
+  var html = '<div class="orichi-product-item"><div class="wImage"><a href="#" title="" class="image cover">  <img data-src="img/1.png" /></a></div><div class="orichi-price-wrapper"><div class="orichi-price">$150.000  <div class="orichi-discount-price">-10%</div></div></div><div class="orichi-progress-bar"><div class="orichi-flash-sale-progress-bar">  <div    class="orichi-flash-sale-progress-bar__complement-wrapper">  </div>  <div class="orichi-flash-sale-progress-bar__text">Sold 159</div>  <div class="orichi-flash-sale-progress-bar__fire">    <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">  </div></div></div></div><div class="orichi-product-item"><div class="wImage"><a href="#" title="" class="image cover">  <img data-src="img/1.jpg" /></a></div><div class="orichi-price-wrapper"><div class="orichi-price">$150.000  <div class="orichi-discount-price">-10%</div></div></div><div class="orichi-progress-bar"><div class="orichi-flash-sale-progress-bar">  <div    class="orichi-flash-sale-progress-bar__complement-wrapper">  </div>  <div class="orichi-flash-sale-progress-bar__text">Sold 159</div>  <div class="orichi-flash-sale-progress-bar__fire">    <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">  </div></div></div></div><div class="orichi-product-item"><div class="wImage"><a href="#" title="" class="image cover">  <img data-src="img/product.png" /></a></div><div class="orichi-price-wrapper"><div class="orichi-price">$150.000  <div class="orichi-discount-price">-10%</div></div></div><div class="orichi-progress-bar"><div class="orichi-flash-sale-progress-bar">  <div    class="orichi-flash-sale-progress-bar__complement-wrapper">  </div>  <div class="orichi-flash-sale-progress-bar__text">Sold 159</div>  <div class="orichi-flash-sale-progress-bar__fire">    <img src="./img/f5233259f90b05efbf3867f564628853.png" alt="">  </div></div></div></div>';
   html += '</div>';
   $('.orichi-product-list').find('.orichi-cb').remove();
   $('.orichi-product-list').append(html);

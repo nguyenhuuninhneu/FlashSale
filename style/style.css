@@ -109,12 +109,6 @@ ul {
 	box-shadow: 1px 1px 6px 3px #b3b3b321;
 }
 
-.flash-sale-progress-bar__fire {
-	position: absolute;
-	left: 3px;
-	top: -6px;
-}
-
 .orichi-product-list .wImage {
 	margin-bottom: 8px;
 }
@@ -123,18 +117,24 @@ ul {
 	padding-bottom: 100%
 }
 
-.flash-sale-progress-bar__fire img {
+.orichi-flash-sale-progress-bar__fire {
+	position: absolute;
+	left: 3px;
+	top: -6px;
+}
+
+.orichi-flash-sale-progress-bar__fire img {
 	width: 18px;
 }
 
-.flash-sale-progress-bar {
+.orichi-flash-sale-progress-bar {
 	height: 16px;
 	background: #ffbda6;
 	position: relative;
 	border-radius: 4px;
 }
 
-.flash-sale-progress-bar__text {
+.orichi-flash-sale-progress-bar__text {
 	font-size: 10px;
 	color: #fff;
 	font-weight: bold;
@@ -144,21 +144,7 @@ ul {
 	text-align: center;
 }
 
-.flash-sale-progress-bar__complement-color {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #ffbda6;
-}
-
-.flash-sale-progress-bar__complement-sizer {
-	background: #fff;
-	float: right;
-	position: relative;
-	height: 18px;
-}
-
-.flash-sale-progress-bar__complement-wrapper {
+.orichi-flash-sale-progress-bar__complement-wrapper {
 	width: 50%;
 	background: #EE4D2D;
 	bottom: 0;
