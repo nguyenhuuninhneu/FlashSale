@@ -1,234 +1,320 @@
- 
-  
-  body {
-   background: #eeee;
-   font-family: 'Roboto';
-  }
-  ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .cb{
-    clear: both;
-  }
-  .hidden{
-    visibility: hidden;
-  }
-  .wImage { overflow: hidden; position: relative; }
-  .wImage:before { content: ""; display: block; padding-bottom: 66.66% }
-  .wImage .image { height: 100%; left: 0; position: absolute; top: 0; width: 100% }
-  .wImage .image.cover img { height: 100%; object-fit: cover; width: 100%; }
-  .wImage .image img,
-  .wImage .image img.owl-lazy { -moz-transform: translateY(-50%) translateX(-50%); -moz-transition: 0.5s all ease-in-out; display: block; left: 50%; margin: auto; max-height: 100%; max-width: 100%; position: absolute; top: 50%; transform: translateY(-50%) translateX(-50%); transition: 0.5s all ease-in-out; vertical-align: middle; } 
-
-  .orichi-wrapper{ 
-    background: white;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 15px;
-      padding: 15px;
-  }
-  .orichi-head{
-    display: flex;
-    background: white;
-  }
-  .orichi-countdown, .orichi-fs{
-    display: inline-block;
-  }
-  .orichi-countdown ul{
-    padding-left: 15px;
-    margin-top: 0;
-    padding-bottom:0px;
-    padding-top: 4px;
-    /* margin-block-start: 17px; */
-  }
-  .orichi-countdown ul li span{
-    padding: 1px 3px;
-    font-size: 13px;
-    background: black;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 3px;
-  }
- 
-   
-  #orichi-countdown ul li {
-    display: inline-block; 
-    padding-right: 1px;
-  }
-
-   .orichi-product-item{
-     float: left;
-     width: calc((100% - (12px*4)) / 4);
-      padding: 10px 6px;
-      margin-bottom: 10px;
-   }
-  .flash-sale-progress-bar__fire {
-    position: absolute;
-    left: 3px;
-    top: -6px;
+body {
+	background: #eeee;
 }
-.orichi-product-list .wImage { margin-bottom: 8px;}   
-.orichi-product-list .wImage:before {padding-bottom: 100%}    
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.orichi-cb {
+	clear: both;
+}
+
+.orichi-hidden {
+	visibility: hidden;
+}
+
+.wImage {
+	overflow: hidden;
+	position: relative;
+}
+
+.wImage:before {
+	content: "";
+	display: block;
+	padding-bottom: 66.66%
+}
+
+.wImage .image {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.wImage .image.cover img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.wImage .image img,
+.wImage .image img.owl-lazy {
+	-moz-transform: translateY(-50%) translateX(-50%);
+	-moz-transition: 0.5s all ease-in-out;
+	display: block;
+	left: 50%;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	transition: 0.5s all ease-in-out;
+	vertical-align: middle;
+}
+
+.orichi-wrapper {
+	background: white;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+.orichi-head {
+	display: flex;
+	background: white;
+}
+
+.orichi-countdown,
+.orichi-fs {
+	display: inline-block;
+}
+
+.orichi-countdown ul {
+	padding-left: 15px;
+	margin-top: 0;
+	padding-bottom: 0px;
+	padding-top: 4px;
+	/* margin-block-start: 17px; */
+}
+
+.orichi-countdown ul li span {
+	padding: 1px 3px;
+	font-size: 13px;
+	background: black;
+	color: white;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 3px;
+}
+
+#orichi-countdown ul li {
+	display: inline-block;
+	padding-right: 1px;
+}
+
+.orichi-product-item {
+	float: left;
+	width: calc((100% - (12px*4)) / 4);
+	padding: 10px 6px;
+	margin-bottom: 10px;
+}
+
+.orichi-product-item:hover {
+	box-shadow: 1px 1px 6px 3px #b3b3b321;
+}
+
+.flash-sale-progress-bar__fire {
+	position: absolute;
+	left: 3px;
+	top: -6px;
+}
+
+.orichi-product-list .wImage {
+	margin-bottom: 8px;
+}
+
+.orichi-product-list .wImage:before {
+	padding-bottom: 100%
+}
+
 .flash-sale-progress-bar__fire img {
-  width: 18px;
+	width: 18px;
 }
+
 .flash-sale-progress-bar {
-    height: 16px;
-    background: #ffbda6;
-    position: relative;
-    border-radius: 4px;
+	height: 16px;
+	background: #ffbda6;
+	position: relative;
+	border-radius: 4px;
 }
+
 .flash-sale-progress-bar__text {
-  font-size: 10px;
-  color: #fff;
-  font-weight: bold;
-  width: 100%;
-  position: absolute;
-  padding: 2px 0;
-  text-align: center;
+	font-size: 10px;
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+	position: absolute;
+	padding: 2px 0;
+	text-align: center;
 }
+
 .flash-sale-progress-bar__complement-color {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ffbda6;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #ffbda6;
 }
+
 .flash-sale-progress-bar__complement-sizer {
-    background: #fff;
-    float: right;
-    position: relative;
-    height: 18px;
+	background: #fff;
+	float: right;
+	position: relative;
+	height: 18px;
 }
+
 .flash-sale-progress-bar__complement-wrapper {
-  width: 50%;
-  background: #EE4D2D;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  height: 16px;
-  border-radius: 4px;
+	width: 50%;
+	background: #EE4D2D;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	height: 16px;
+	border-radius: 4px;
 }
 
-.orichi-price-wrapper{ display: flex;}
-.orichi-price-wrapper .orichi-price{font-size: 16px;font-weight: bold;color: #ee4d2d;margin-top: 12px; }
- .orichi-discount-price
- {
-  position: absolute;
-  background: #F3E9E7;
-  top: -55%;
-  right: -35%;
-  font-size: 8px;
-  color: #ee4d2d;
-  font-weight: bold;
-  padding: 2px;
-  border: 1px solid #ee4d2d;
-  }
+.orichi-price-wrapper {
+	display: flex;
+}
+
 .orichi-price-wrapper .orichi-price {
- position: relative;
-}
-.orichi-progress-bar{
-  margin-top: 10px;
-  display: block;
-}
-.orichi-price-old{
-  color: rgba(0,0,0,.13);
-  padding-top: 11x;
-  vertical-align: bottom;
-  display: table-column;
-  margin-top: 5px;
-  margin-right: 5px;
-  text-decoration: line-through;
-}
-.orichi-hr{
-  display: block;
-    margin-bottom: 25px;
-    border: 1px solid rgba(0,0,0,.05);
-}
-.orichi-product-item:hover{
-  box-shadow: 1px 1px 6px 3px #b3b3b321;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ee4d2d;
+	margin-top: 12px;
 }
 
-.orichi-product-list{
-  position: relative;
+.orichi-discount-price {
+	position: absolute;
+	background: #F3E9E7;
+	top: -65%;
+	right: -40%;
+	font-size: 8px;
+	color: #ee4d2d;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #ee4d2d;
 }
-/* .orichi-product-list .slick-prev{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-  background: #EE4D2D;
-  padding: 15px 3px;
-  color: #fff;
-  transform: translateY(-50%);
+
+.orichi-price-wrapper .orichi-price {
+	position: relative;
 }
-.orichi-product-list .slick-next{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  z-index: 1;
-  background: #EE4D2D;
-  padding: 15px 3px;
-  color: #fff;
-  transform: translateY(-50%);
-} */
-.orichi-product-list .slick-prev:hover,.orichi-product-list .slick-next:hover{
+
+.orichi-progress-bar {
+	margin-top: 10px;
+	display: block;
+}
+
+.orichi-price-old {
+	color: rgba(0, 0, 0, .13);
+	padding-top: 11x;
+	vertical-align: bottom;
+	display: table-column;
+	margin-top: 5px;
+	margin-right: 5px;
+	text-decoration: line-through;
+}
+
+.orichi-hr {
+	display: block;
+	margin-bottom: 25px;
+	border: 1px solid rgba(0, 0, 0, .05);
+}
+
+
+
+.orichi-product-list {
+	position: relative;
+}
+
+#orichi-slider .orichi-slider-view .orichi-product-item-slider {
+	padding: 15px;
+
+}
+#orichi-slider .orichi-slider-view .orichi-product-item-slider:hover {
+	box-shadow: 1px 1px 6px 3px #b3b3b321;
+
+}
+#orichi-slider .orichi-slider-view .owl-controls .owl-prev {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: -4px;
+	z-index: 1;
+	background: #EE4D2D url(/img/chevron-left-solid.svg);
+	padding: 18px 4px;
+	border: 2px solid #EE4D2D;
+	box-sizing: border-box;
+	color: #fff;
+	transform: translateY(-50%);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#orichi-slider .orichi-slider-view .owl-controls .owl-next {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: -4px;
+	z-index: 1;
+	background: #EE4D2D url(/img/chevron-right-solid.svg) no-repeat 0;
+	padding: 18px 4px;
+	border: 2px solid #EE4D2D;
+	box-sizing: border-box;
+	color: #fff;
+	transform: translateY(-50%);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#orichi-slider .orichi-slider-view .owl-controls .owl-next:hover,
+#orichi-slider .orichi-slider-view .owl-controls .owl-prev:hover {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
+}
+
+.orichi-view-more {
+	text-align: center;
+}
+
+.orichi-btn-view-more {
+	font-size: 12px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 10px;
+	color: #fff;
+	background: #EE4D2D;
+}
+
+#orichi-spin-loading {
+	visibility: hidden;
+}
+
+.orichi-product-list .orichi-slick-prev {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: -4px;
+	z-index: 1;
+	background: #EE4D2D url(/img/chevron-left-solid.svg);
+	padding: 18px 4px;
+	border: 2px solid #EE4D2D;
+	box-sizing: border-box;
+	color: #fff;
+	transform: translateY(-50%);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.orichi-product-list .orichi-slick-next {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: -4px;
+	z-index: 1;
+	background: #EE4D2D url(/img/chevron-right-solid.svg) no-repeat 0;
+	padding: 18px 4px;
+	border: 2px solid #EE4D2D;
+	box-sizing: border-box;
+	color: #fff;
+	transform: translateY(-50%);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.orichi-product-list .orichi-slick-next:hover,.orichi-product-list .orichi-slick-prev{
   cursor: pointer;
 }
-
-#slider .slider-view .owl-controls .owl-prev { 
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-  background: #EE4D2D;
-  padding: 15px 3px;
-  color: #fff;
-  transform: translateY(-50%);}
-  #slider .slider-view .owl-controls .owl-next { 
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 1;
-    background: #EE4D2D;
-    padding: 15px 3px;
-    color: #fff;
-    transform: translateY(-50%);}
-#slider .slider-view .owl-controls .owl-next:hover,
-#slider .slider-view .owl-controls .owl-prev:hover { box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) }
-#slider .slider-view .owl-controls .owl-next:after,
-#slider .slider-view .owl-controls .owl-prev:after { content: "\f054"; font-family: 'Font Awesome'; font-weight: 900; }
-
-.orichi-view-more{
-  text-align: center;
-}
-
-.btn-view-more{
-  font-size: 12px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 6px 10px;
-  color: #fff;
-  background: #EE4D2D;
-}
-
-#spin-loading{
-  visibility: hidden;
-}
-
-/* .orichi-product-list{
-  animation: 1s ease-out 0s 1 slideInFromTop;
-}
-
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
