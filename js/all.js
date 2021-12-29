@@ -79,57 +79,71 @@ $(document).ready(function () {
 
 if ($('#orichi-layout').val() === 'slider') {
     $('.orichi-product-list')
-        .on('init', function (slick) {
-            $('.orichi-slick-prev').addClass('orichi-hidden');
-        }).slick({
-            dots: false,
-            infinite: false,
-            lazyLoad: 'ondemand',
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            prevArrow: '<div class="orichi-slick-prev"></div>',
-            nextArrow: '<div class="orichi-slick-next"></div>',
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
+      .on('init', function (slick) {
+        $('.orichi-slick-prev').addClass('orichi-hidden');
+      }).slick({
+        dots: false,
+        infinite: false,
+        lazyLoad: 'ondemand',
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: '<div class="orichi-slick-prev"></div>',
+        nextArrow: '<div class="orichi-slick-next"></div>',
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 479,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
     $('.orichi-product-list').on('afterChange', function (event, slick, currentSlide) {
-        if (slick.currentSlide >= slick.slideCount - slick.options.slidesToShow) {
-            $('.orichi-slick-next').addClass('orichi-hidden');
-        }
-        else {
-            $('.orichi-slick-next').removeClass('orichi-hidden');
-        }
-
-        if (currentSlide === 0) {
-            $('.orichi-slick-prev').addClass('orichi-hidden');
-        }
-        else {
-            $('.orichi-slick-prev').removeClass('orichi-hidden');
-        }
+      if (slick.currentSlide >= slick.slideCount - slick.options.slidesToShow) {
+        $('.orichi-slick-next').addClass('orichi-hidden');
+      }
+      else {
+        $('.orichi-slick-next').removeClass('orichi-hidden');
+      }
+  
+      if (currentSlide === 0) {
+        $('.orichi-slick-prev').addClass('orichi-hidden');
+      }
+      else {
+        $('.orichi-slick-prev').removeClass('orichi-hidden');
+      }
     })
-}
+  }
 
 
 $('.orichi-btn-view-more').on('click', function () {

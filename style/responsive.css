@@ -3,13 +3,19 @@
 }
 
 @media (max-width:991px){
-   
+    .orichi-product-item{
+        width: calc((100% - (12px*3)) / 3);
+    }
 }
 
 @media (max-width:767px){ 
-   
+    .orichi-product-item{
+        width: calc((100% - (12px*2)) / 2);
+    }
 }
 
 @media (max-width:479px){ 
-   
+    .orichi-product-item{
+        width: calc(100% - (12px));
+    }
 }
