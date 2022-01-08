@@ -8,12 +8,36 @@
   <link rel="stylesheet" href="./style/responsive.css">
   <link href="./library/slick/slick.css" rel="stylesheet" /> -->
 
-
+<style>
+  .button-layout{
+    min-height: 3.6rem;
+    min-width: 3.6rem;
+    margin: 0;
+    padding: 0.7rem 1.6rem;
+    text-decoration: none;
+    line-height: 1.6rem;
+    font-weight: 400;
+    border: 1px solid rgba(140, 145, 150, 1);
+    color:#000;
+    background: #fff;
+  }
+  .button-layout:hover{
+    cursor: pointer;
+  }
+  .button-layout.active{
+  
+    color:#fff;
+    background: #008060;
+  }
+</style>
 
 </head>
 
 <body>
-  <a href="./index.html">home</a>
+  <div class="switch-layout">
+    <a href="javascript://" class="button-layout" id="grid">Grid</a>
+    <a href="javascript://" class="button-layout" id="slider">Slider</a>
+  </div>
   <div class="orichi-wrapper">
     <div class="orichi-head">
       <div class="orichi-fs">
@@ -28,7 +52,7 @@
       </div>
     </div>
     <hr class="orichi-hr" />
-    <div id="orichi-slider">
+    <div id="orichi-slider" class="orichi-slider hide">
       <div class="orichi-product-list orichi-slider-view">
         <div class="orichi-product-item-slider">
           <div class="wImage">

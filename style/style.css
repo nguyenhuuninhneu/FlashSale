@@ -1,24 +1,28 @@
 body {
-	background: #eeee;
+	background: #eeee
 }
 
 ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 0
 }
 
 .orichi-cb {
-	clear: both;
+	clear: both
 }
 
 .orichi-hidden {
-	visibility: hidden;
+	visibility: hidden
+}
+
+.orichi-display-none {
+	display: none;
 }
 
 .wImage {
 	overflow: hidden;
-	position: relative;
+	position: relative
 }
 
 .wImage:before {
@@ -38,13 +42,13 @@ ul {
 .wImage .image.cover img {
 	height: 100%;
 	object-fit: cover;
-	width: 100%;
+	width: 100%
 }
 
 .wImage .image img,
 .wImage .image img.owl-lazy {
 	-moz-transform: translateY(-50%) translateX(-50%);
-	-moz-transition: 0.5s all ease-in-out;
+	-moz-transition: .5s all ease-in-out;
 	display: block;
 	left: 50%;
 	margin: auto;
@@ -53,64 +57,63 @@ ul {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	transition: 0.5s all ease-in-out;
-	vertical-align: middle;
+	transition: .5s all ease-in-out;
+	vertical-align: middle
 }
 
 .orichi-wrapper {
-	background: white;
-	max-width: 800px;
+	background: #fff;
+	/*max-width:800px;*/
 	margin: auto;
 	margin-top: 15px;
-	padding: 15px;
+	padding: 15px
 }
 
 .orichi-head {
 	display: flex;
-	background: white;
+	background: #fff
 }
 
 .orichi-countdown,
 .orichi-fs {
-	display: inline-block;
+	display: inline-block
 }
 
 .orichi-countdown ul {
 	padding-left: 15px;
 	margin-top: 0;
-	padding-bottom: 0px;
-	padding-top: 4px;
-	/* margin-block-start: 17px; */
+	padding-bottom: 0;
+	padding-top: 4px
 }
 
 .orichi-countdown ul li span {
 	padding: 1px 3px;
 	font-size: 13px;
-	background: black;
-	color: white;
+	background: #000;
+	color: #fff;
 	text-align: center;
 	font-weight: 700;
-	border-radius: 3px;
+	border-radius: 3px
 }
 
 #orichi-countdown ul li {
 	display: inline-block;
-	padding-right: 1px;
+	padding-right: 1px
 }
 
 .orichi-product-item {
 	float: left;
-	width: calc((100% - (12px*4)) / 4);
+	width: calc((100% - 4)/ 4);
 	padding: 10px 6px;
-	margin-bottom: 10px;
+	margin-bottom: 10px
 }
 
 .orichi-product-item:hover {
-	box-shadow: 1px 1px 6px 3px #b3b3b321;
+	box-shadow: 1px 1px 6px 3px #b3b3b321
 }
 
 .orichi-product-list .wImage {
-	margin-bottom: 8px;
+	margin-bottom: 8px
 }
 
 .orichi-product-list .wImage:before {
@@ -120,70 +123,71 @@ ul {
 .orichi-flash-sale-progress-bar__fire {
 	position: absolute;
 	left: 3px;
-	top: -6px;
+	top: -6px
 }
 
 .orichi-flash-sale-progress-bar__fire img {
-	width: 18px;
+	width: 18px
 }
 
 .orichi-flash-sale-progress-bar {
 	height: 16px;
 	background: #ffbda6;
 	position: relative;
-	border-radius: 4px;
+	border-radius: 4px
 }
 
 .orichi-flash-sale-progress-bar__text {
 	font-size: 10px;
 	color: #fff;
-	font-weight: bold;
+	font-weight: 700;
 	width: 100%;
 	position: absolute;
 	padding: 2px 0;
-	text-align: center;
+	text-align: center
 }
 
 .orichi-flash-sale-progress-bar__complement-wrapper {
 	width: 50%;
-	background: #EE4D2D;
+	background: #ee4d2d;
 	bottom: 0;
 	left: 0;
 	position: absolute;
 	height: 16px;
-	border-radius: 4px;
+	border-radius: 4px
 }
 
 .orichi-price-wrapper {
-	display: flex;
+	display: flex
 }
 
 .orichi-price-wrapper .orichi-price {
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ee4d2d;
-	margin-top: 12px;
+	margin-top: 12px
 }
 
 .orichi-discount-price {
 	position: absolute;
-	background: #F3E9E7;
-	top: -65%;
-	right: -40%;
-	font-size: 8px;
+	background: #f3e9e7;
+	top: -15px;
+	right: -30px;
+	font-size: 9px;
+	;
 	color: #ee4d2d;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 2px;
-	border: 1px solid #ee4d2d;
+	border: 1px solid #ee4d2d
 }
 
 .orichi-price-wrapper .orichi-price {
-	position: relative;
+	position: relative
 }
 
 .orichi-progress-bar {
 	margin-top: 10px;
-	display: block;
+	display: block
 }
 
 .orichi-price-old {
@@ -193,81 +197,48 @@ ul {
 	display: table-column;
 	margin-top: 5px;
 	margin-right: 5px;
-	text-decoration: line-through;
+	text-decoration: line-through
 }
 
 .orichi-hr {
 	display: block;
-	margin-bottom: 25px;
-	border: 1px solid rgba(0, 0, 0, .05);
+	margin: 0px;
+	border: 1px solid rgba(0, 0, 0, .05)
 }
 
-
-
 .orichi-product-list {
-	position: relative;
+	position: relative
 }
 
 #orichi-slider .orichi-slider-view .orichi-product-item-slider {
-	padding: 15px;
-
+	padding: 15px
 }
+
 #orichi-slider .orichi-slider-view .orichi-product-item-slider:hover {
-	box-shadow: 1px 1px 6px 3px #b3b3b321;
-
-}
-#orichi-slider .orichi-slider-view .owl-controls .owl-prev {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: -4px;
-	z-index: 1;
-	background: #EE4D2D url(/img/chevron-left-solid.svg);
-	padding: 18px 4px;
-	border: 2px solid #EE4D2D;
-	box-sizing: border-box;
-	color: #fff;
-	transform: translateY(-50%);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-#orichi-slider .orichi-slider-view .owl-controls .owl-next {
-	display: block;
-	position: absolute;
-	top: 50%;
-	right: -4px;
-	z-index: 1;
-	background: #EE4D2D url(/img/chevron-right-solid.svg) no-repeat 0;
-	padding: 18px 4px;
-	border: 2px solid #EE4D2D;
-	box-sizing: border-box;
-	color: #fff;
-	transform: translateY(-50%);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-#orichi-slider .orichi-slider-view .owl-controls .owl-next:hover,
-#orichi-slider .orichi-slider-view .owl-controls .owl-prev:hover {
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3)
+	box-shadow: 1px 1px 6px 3px #b3b3b321
 }
 
 .orichi-view-more {
-	text-align: center;
+	text-align: center
 }
 
 .orichi-btn-view-more {
 	font-size: 12px;
 	text-decoration: none;
+	font-weight: bold;
 	display: inline-block;
 	padding: 6px 10px;
 	color: #fff;
-	background: #EE4D2D;
+	background: #ee4d2d
+}
+
+.orichi-btn-view-more:hover,
+.orichi-btn-view-more:focus {
+	color: #fff
 }
 
 #orichi-spin-loading {
-	visibility: hidden;
+	display: none;
 }
 
 .orichi-product-list .orichi-slick-prev {
@@ -276,14 +247,14 @@ ul {
 	top: 50%;
 	left: -4px;
 	z-index: 1;
-	background: #EE4D2D url(../img/chevron-left-solid.svg);
+	background: #ee4d2d url('https://nguyenhuuninhneu.github.io/FlashSale/img/chevron-left-solid.svg');
 	padding: 18px 4px;
-	border: 2px solid #EE4D2D;
+	border: 2px solid #ee4d2d;
 	box-sizing: border-box;
 	color: #fff;
 	transform: translateY(-50%);
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat
 }
 
 .orichi-product-list .orichi-slick-next {
@@ -292,15 +263,17 @@ ul {
 	top: 50%;
 	right: -4px;
 	z-index: 1;
-	background: #EE4D2D url(../img/chevron-right-solid.svg) no-repeat 0;
+	background: #ee4d2d url(https://nguyenhuuninhneu.github.io/FlashSale/img/chevron-right-solid.svg) no-repeat 0;
 	padding: 18px 4px;
-	border: 2px solid #EE4D2D;
+	border: 2px solid #ee4d2d;
 	box-sizing: border-box;
 	color: #fff;
 	transform: translateY(-50%);
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat
 }
-.orichi-product-list .orichi-slick-next:hover,.orichi-product-list .orichi-slick-prev{
-  cursor: pointer; 
+
+.orichi-product-list .orichi-slick-next:hover,
+.orichi-product-list .orichi-slick-prev {
+	cursor: pointer
 }
